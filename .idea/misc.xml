@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/core-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-command-library/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-query-library/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-editeur/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-query-join/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-command-library_with_members/pom.xml" />
+        <option value="$PROJECT_DIR$/state_stored_library/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-Command-Library-book/pom.xml" />
+        <option value="$PROJECT_DIR$/lab3-ms-commande/pom.xml" />
+        <option value="$PROJECT_DIR$/Lab3-query/pom.xml" />
+        <option value="$PROJECT_DIR$/Ms-Command-Library-Book-Stored/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Lab3-query/pom.xml" />
+        <option value="$PROJECT_DIR$/lab3-ms-commande/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="25" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

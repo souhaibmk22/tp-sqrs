@@ -1,0 +1,47 @@
+services:
+  axonserver:
+    image: axoniq/axonserver:latest
+    platform: linux/amd64
+    container_name: axon-server
+    environment:
+      AXONIQ_AXONSERVER_STANDALONE: "true"
+    ports:
+      - "8024:8024"
+      - "8124:8124"
+
+  mysql:
+    image: mysql
+    platform: linux/arm64
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test1
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin-container
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "3737:80"
+
+  mongodb:                          # ← NOUVEAU
+    image: mongo:latest
+    platform: linux/arm64
+    container_name: mongo-container
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mysql_data:
+  mongo_data:                       # ← NOUVEAU
