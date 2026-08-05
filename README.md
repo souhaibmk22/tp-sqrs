@@ -1,1 +1,1 @@
-# tp-sqrs
+# tp-cqrs
